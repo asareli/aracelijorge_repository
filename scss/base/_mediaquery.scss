@@ -1,0 +1,41 @@
+@media screen and (max-width: 426px){
+    body .barra{
+        height: 195px;
+    }
+    body .barra .barra__navegacion .barra__navegacion__lista{
+        flex-direction: column;
+    }
+    body .barra .barra__navegacion .barra__navegacion__lista .barra__navegacion__lista__elemento a{
+        font-size: nth($font-size, 2);
+    }
+    body header .title{
+        flex-direction: column;
+    }
+    body header .title .title__container{
+        font-size: nth($font-size, 3);
+    }
+    body main .img__fondo{
+        justify-content: start;
+        margin: 0px;
+        margin-top: 40px;
+        border: 0px ;
+        padding: 0px;
+    }
+    body main .frase .frase__inspo{
+        margin: 0cm;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 426px) {
+    body .barra{
+        height: 170px;
+    }
+    body .barra .barra__navegacion .barra__navegacion__lista{
+        flex-direction: column;
+    }
+    body header .title{
+        flex-direction: column;
+    }
+    body header .title .title__container{
+        font-size: nth($font-size, 4);
+    }
+}

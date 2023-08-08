@@ -8,20 +8,10 @@
 body{
     background-color: #eee7db;
 }
-.fotologo{
-    width: 95px;
-    height: 95px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
-}
-.title-container{
-    flex: 1;
-    text-align: left;
-    align-content: left;
-}
 .barra{
+    position: relative;
+    top: 0;
+    left: 0;
     background-color: #e8ddcd;
     padding: 0px;
     border: 0px solid #000;
@@ -32,49 +22,70 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.navegacioncita{
-    color: #0f0907;
+.barra__navegacion__lista{
     background-color: #e8ddcd;
-    font-size: 65px;
     list-style: none;
-    padding: 1;
-    margin: 1;
     display: flex;
     justify-content: space-evenly;
 }
-.navegacioncita li{
-    display: inline;
-    margin-right: 10px;
+.barra__navegacion__lista__elemento a{
+    color: #0f0907;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    width: 80px;
+    margin: 5px;
+    padding: 5px;
+    bottom: 100px;
 }
-header{
-    position: relative;
-    top: 0;
-    left: 0;
+.logo__img{
+    width: 95px;
+    height: 95px;
+    background-image: url(img/true-logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
 }
-header h1{
+.title{
+    display: flex;
+    padding: 0px 10px 0px 10px;
+}
+.title__container{
+    text-align: left;
+    align-content: left;
     color: #0f0907;
     background-color: #e8ddcd;
     font-size: 65px;
     font-style: italic;
     font-family: 'Playfair Display', serif;
-    padding: 0px 10px 0px 10px;
 }
-header nav ul{
-    list-style: none;
-}
-header nav ul li{
-    background-color: #e8ddcd;
+/* MAIN */
+.muestra__subtitulo{
     display: flex;
-    padding: 5px;
-    margin: 5px;
-    position: center;
-    bottom: 100px;
-}
-header nav ul li a{
-    color: #0f0907;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    font-size: 80px;
     font-style: italic;
-    width: 70px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
 }
+.muestra__fotos__izq{
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+}
+.muestra__fotos__izq img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .muestra__fotos__izq{
+    display: grid;
+    grid-template-columns: 1;
+}
+.muestra__fotos__der{
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+} */

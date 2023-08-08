@@ -1,0 +1,22 @@
+main{
+    @extend %flex-body;
+    .img__fondo{
+        @extend %flex-location;
+        border: 40px solid nth($paleta-colores, 1);
+        margin: 20px;
+        padding: 20px;
+        .img__fondo__mainimg{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    .frase__inspo{
+        color: nth($paleta-colores, 4);
+        font-family: 'Monsieur La Doulaise';
+        font-style: italic;
+        text-align: center;
+        font-size: nth($font-size, 4);
+        margin: 5cm;
+    }
+}

@@ -1,0 +1,49 @@
+$paleta-colores:
+#eee7db,
+#e8ddcd,
+#0f0907,
+#8c5936,
+#d0cabe,
+#FFFFFF;
+
+$font-size:
+18px, 
+20px, 
+25px, 
+45px, 
+65px;
+
+//MAPAS
+$boton:(
+    background-color: #D0CABE,
+    border: 10px solid #FFFFFF,
+);
+
+$boton-de-boton: (
+    background-color: #e8ddcd,
+    color: #0f0907,
+    font-size: 16px,
+);
+//EXTENDS @extend
+%flex-body{
+    display: flex;
+    flex-direction: column;
+}
+%flex-barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+%flex-nav-li{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+%flex-location{
+    display: flex;
+    justify-content: start;
+}
+%flex-foot{
+    display: flex;
+    justify-content: space-evenly;
+}
