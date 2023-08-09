@@ -1,7 +1,6 @@
 body {
     background-color: nth($paleta-colores, 1);
-    display: flex;
-    flex-direction: column;
+    @extend %flex-body;
     min-height: 100vh;
     .barra {
         position: relative;
@@ -13,16 +12,12 @@ body {
         width: 100%;
         height: 95px;
         margin: 0px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @extend %flex-barra;
         .barra__navegacion {
             .barra__navegacion__lista {
                 background-color: nth($paleta-colores, 2);
                 list-style: none;
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
+                @extend %flex-nav-li;
                 padding: 5px;
                 margin-left: 10px;
                 .barra__navegacion__lista__elemento a {

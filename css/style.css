@@ -4,9 +4,19 @@
   padding: 0;
   box-sizing: border-box; }
 
-main {
+body, main, main .seccion__principal .seccion__principal__div .seccion__principal__div__subtitulo, main .seccion__secundaria {
   display: flex;
   flex-direction: column; }
+
+body .barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+body .barra .barra__navegacion .barra__navegacion__lista, main .seccion__secundaria .seccion__secundaria__div2 .seccion__secundaria__div2__parrafos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
 
 main .img__fondo {
   display: flex;
@@ -14,8 +24,6 @@ main .img__fondo {
 
 body {
   background-color: #eee7db;
-  display: flex;
-  flex-direction: column;
   min-height: 100vh; }
   body .barra {
     position: relative;
@@ -26,16 +34,10 @@ body {
     border: 0px solid #000;
     width: 100%;
     height: 95px;
-    margin: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    margin: 0px; }
     body .barra .barra__navegacion .barra__navegacion__lista {
       background-color: #e8ddcd;
       list-style: none;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
       padding: 5px;
       margin-left: 10px; }
       body .barra .barra__navegacion .barra__navegacion__lista .barra__navegacion__lista__elemento a {
@@ -88,6 +90,33 @@ main .frase__inspo {
   font-size: 45px;
   margin: 5cm; }
 
+main {
+  padding-bottom: 30px; }
+  main .seccion__principal .seccion__principal__div .seccion__principal__div__subtitulo {
+    align-items: center;
+    font-size: 85px;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100; }
+  main .seccion__secundaria {
+    align-items: center;
+    margin: 10px;
+    padding: 10px; }
+    main .seccion__secundaria .seccion__secundaria__div1 {
+      width: 600px;
+      height: 300px;
+      overflow: hidden; }
+      main .seccion__secundaria .seccion__secundaria__div1 .seccion__secundaria__div1__imagencarla {
+        width: 600px;
+        height: 300px;
+        object-fit: cover; }
+    main .seccion__secundaria .seccion__secundaria__div2 .seccion__secundaria__div2__parrafos {
+      text-align: center;
+      font-size: 40px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 100;
+      margin-top: 20px; }
+
 footer {
   width: 100%;
   margin-top: auto; }
@@ -128,7 +157,28 @@ footer {
     border: 0px;
     padding: 0px; }
   body main .frase .frase__inspo {
-    margin: 0cm; } }
+    margin: 0cm; }
+  body main .seccion__principal .seccion__principal__div .seccion__principal__div__subtitulo {
+    font-size: 45px;
+    margin-top: 10px; }
+  body main .seccion__secundaria {
+    width: auto;
+    margin: 10px;
+    padding: 0;
+    border: 0; }
+  body main .seccion__secundaria .seccion__secundaria__div1 {
+    width: 400px;
+    height: 200px; }
+  body main .seccion__secundaria .seccion__secundaria__div1 .seccion__secundaria__div1__imagencarla {
+    width: 400px;
+    height: 200px; }
+  body main .seccion__secundaria .seccion__secundaria__div2 {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0; }
+  body main .seccion__secundaria .seccion__secundaria__div2 .seccion__secundaria__div2__parrafos {
+    font-size: 25px; } }
 
 @media screen and (max-width: 1024px) and (min-width: 426px) {
   body .barra {

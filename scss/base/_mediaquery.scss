@@ -24,6 +24,33 @@
     body main .frase .frase__inspo{
         margin: 0cm;
     }
+    body main .seccion__principal .seccion__principal__div .seccion__principal__div__subtitulo{
+        font-size: nth($font-size, 4);
+        margin-top: 10px;
+    }
+    body main .seccion__secundaria{
+        width: auto;
+        margin: 10px;
+        padding: 0;
+        border: 0;
+    }
+    body main .seccion__secundaria .seccion__secundaria__div1{
+        width: 400px;
+        height: 200px;
+    }
+    body main .seccion__secundaria .seccion__secundaria__div1 .seccion__secundaria__div1__imagencarla{
+        width: 400px;
+        height: 200px;
+    }
+    body main .seccion__secundaria .seccion__secundaria__div2{
+        width: auto;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    body main .seccion__secundaria .seccion__secundaria__div2 .seccion__secundaria__div2__parrafos{
+        font-size: nth($font-size, 3);
+    }
 }
 @media screen and (max-width: 1024px) and (min-width: 426px) {
     body .barra{
