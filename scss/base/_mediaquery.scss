@@ -50,6 +50,43 @@
     }
     body main .seccion__secundaria .seccion__secundaria__div2 .seccion__secundaria__div2__parrafos{
         font-size: nth($font-size, 3);
+        margin-top: 10px;
+    }
+    body main .grid{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    body main .grid .empty{
+        display: none;
+    }
+    body main .grid .primer__item{
+        margin-top: 10px;
+    }
+    body main .grid .primer__item .subtitulo{
+        font-size: nth($font-size, 4);
+    }
+    body main .grid .segundo__item .resenas__todas__texto{
+        font-size: nth($font-size, 3);
+        justify-content: center;
+    }
+    body main .grid .segundo__item .resenas__todas__firma{
+        font-size: nth($font-size, 3);
+    }
+    body main .grid .tercer__item .resenas__todas__texto{
+        font-size: nth($font-size, 3);
+        justify-content: center;
+    }
+    body main .grid .tercer__item .resenas__todas__firma{
+        font-size: nth($font-size, 3);
+    }
+    body main .grid .cuarto__item .resenas__todas__texto{
+        font-size: nth($font-size, 3);
+        justify-content: center;
+    }
+    body main .grid .cuarto__item .resenas__todas__firma{
+        font-size: nth($font-size, 3);
     }
 }
 @media screen and (max-width: 1024px) and (min-width: 426px) {

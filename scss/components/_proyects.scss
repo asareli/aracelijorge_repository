@@ -1,0 +1,39 @@
+main{
+    // display: flex;
+    // flex-direction: column;
+    section{
+        .subtitulo{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 85px;
+            font-style: italic;
+            font-family: 'Poppins', sans-serif;
+        }
+    .subtitulo__proyectos{
+        display: flex;
+        flex-direction: row;
+    }
+        .subtitulo__proyectos__botones{
+            background-color: #D0CABE;
+            border: 10px solid #FFFFFF;
+            max-width: 300px;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px;
+            .subtitulo__proyectos__botones__img{
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                display: flex;
+                flex-direction: row;
+            }
+            .subtitulo__proyectos__botones__boton{
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+}

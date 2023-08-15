@@ -25,6 +25,7 @@ $boton-de-boton: (
     color: #0f0907,
     font-size: 16px,
 );
+
 //EXTENDS @extend
 %flex-body{
     display: flex;
@@ -43,6 +44,10 @@ $boton-de-boton: (
 %flex-location{
     display: flex;
     justify-content: start;
+}
+%flex-subtitles{
+    display: flex;
+    justify-content: center;
 }
 %flex-foot{
     display: flex;

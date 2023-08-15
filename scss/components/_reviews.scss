@@ -1,0 +1,73 @@
+main{
+    @extend %flex-body;
+    align-items: center;
+    .grid{
+        width: 80%;
+        margin-top: 20px;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        .empty{
+            grid-row: span 1;
+            grid-column: span 1;
+        }
+        .primer__item{
+            margin-bottom: 60px;
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
+            justify-self: center;
+            .subtitulo{
+                font-size: nth($font-size, 6);
+                font-style: italic;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 100;
+            }
+        }
+        .segundo__item{
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+            .resenas__todas__texto{
+                text-align: center;
+                font-size: 26px;
+                font-family: 'Poppins', sans-serif;
+            }
+            .resenas__todas__firma{
+                font-weight: bold;
+                font-family: 'Poppins', sans-serif;
+                font-size: 26px;
+                text-align: end;
+            }
+        }
+        .tercer__item{
+            grid-row: 3 / 4;
+            grid-column: 2 / 3;
+            .resenas__todas__texto{
+                text-align: center;
+                font-size: 26px;
+                font-family: 'Poppins', sans-serif;
+            }
+            .resenas__todas__firma{
+                font-weight: bold;
+                font-family: 'Poppins', sans-serif;
+                font-size: 26px;
+                text-align: end;
+            }
+        }
+        .cuarto__item{
+            grid-row: 2 / 3;
+            grid-column: 3 / 4;
+            .resenas__todas__texto{
+                text-align: center;
+                font-size: 26px;
+                font-family: 'Poppins', sans-serif;
+            }
+            .resenas__todas__firma{
+                font-weight: bold;
+                font-family: 'Poppins', sans-serif;
+                font-size: 26px;
+                text-align: end;
+            }
+        }
+    }
+}

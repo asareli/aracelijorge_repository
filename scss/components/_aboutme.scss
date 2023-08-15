@@ -32,7 +32,7 @@ main {
             .seccion__secundaria__div2__parrafos {
                 @extend %flex-nav-li;
                 text-align: center;
-                font-size: 40px;
+                font-size: nth($font-size, 4);
                 font-family: 'Poppins', sans-serif;
                 font-weight: 100;
                 margin-top: 20px;
