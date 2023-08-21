@@ -3,21 +3,17 @@ footer{
     margin-top: auto ;
     .contactos{
         background-color: nth($paleta-colores, 2);
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        @extend %flex-center-column;
         .contactos__subtitulo{
             color: nth($paleta-colores, 3);
             background-color: nth($paleta-colores, 2);
             font-family: 'Poppins', sans-serif;
             text-align: center;
-            display: flex;
-            justify-content: center;
+            @extend %flex-subtitles;
             align-items: center;
         }
         .contactos__network{
-            display: flex;
-            justify-content: space-evenly;
+            @extend %flex-foot;
             margin: 15px;
             flex-direction: row;
         }

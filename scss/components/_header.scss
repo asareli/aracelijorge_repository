@@ -1,4 +1,4 @@
-body {
+body{
     background-color: nth($paleta-colores, 1);
     @extend %flex-body;
     min-height: 100vh;
@@ -20,17 +20,23 @@ body {
                 @extend %flex-nav-li;
                 padding: 5px;
                 margin-left: 10px;
-                .barra__navegacion__lista__elemento a {
+                width: 600px;
+                .barra__navegacion__lista__elemento{
+                    line-height: 20px;
+                    text-align: center;
+                }
+                .barra__navegacion__lista__elemento a{
                     color: nth($paleta-colores, 3);
                     font-size: nth($font-size, 2);
                     font-family: 'Poppins', sans-serif;
                     font-style: italic;
                     text-decoration: none;
-                    width: 80px;
-                    margin: 5px;
-                    padding: 5px;
-                    bottom: 100px;
+                    transition: transform 0.3s, font-size 0.3s;
                     }
+                .barra__navegacion__lista__elemento a:hover{
+                    transform: scale(1.1);
+                    font-size: nth($font-size, 3);
+                }
                 }
             }
         }

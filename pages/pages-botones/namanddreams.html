@@ -3,12 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creadora de contenido Carla Aramayo para mejorar la estética de las marcas">
+    <meta name="keywords"
+        content="fashion, moda, creacion, contenido, fotos, videos, estetica, minimalismo, estilismo, produccion">
+    <meta property="og:type" content="Fashion-Web">
+    <meta property="og:title" content="Más Coco Que Chanel">
+    <meta property="og:url" content="https://mascocoquechanel.netlify.app/">
+    <meta property="og:image" content="https://mascocoquechanel.netlify.app/img/MC_QC_sin_fondo.png">
+    <meta property="og:description"
+        content="Creadora de contenido Carla Aramayo para mejorar la estética de las marcas">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/style.css">
-    <title>Más Coco Que Chanel</title>
+    <title class="titulo">Más Coco Que Chanel | Nam and Dreams</title>
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <title>Más Coco Que Chanel | Nam and Dreams</title>
 </head>
 <body>
     <header class="barra">
-        <nav>
+        <nav class="barra__navegacion"> 
             <ul class="barra__navegacion__lista">
                 <li class="barra__navegacion__lista__elemento"><a href="../../index.html">Inicio</a></li>
                 <li class="barra__navegacion__lista__elemento"><a href="../sobremi.html">Sobre mi</a></li>
@@ -16,9 +29,9 @@
                 <li class="barra__navegacion__lista__elemento"><a href="../resenas.html">Reseñas</a></li>
                 <li class="barra__navegacion__lista__elemento"><a href="#contactos">Contactos</a></li>
             </ul>
-        </nav> 
+        </nav>
         <div class="logo__container">
-            <img src="../../img/MC_QC_sin_fondo.png" class="logo__img">
+            <a href="../../index.html"><img src="../../img/MC_QC_sin_fondo.png" alt="logopag" class="logo__img"></a>
         </div>
         <div class="title">
             <h1 class="title__container">Más Coco&nbsp;</h1>
@@ -26,39 +39,49 @@
         </div>
     </header>
     <main>
-        <section class="muestra">
-            <div>
-                <h2 class="muestra__subtitulo">Nam and Dreams</h2>
-            </div>
-            <div class="muestra__fotos">
-                <div class="muestra__fotos__izq">
-                    <img src="../../img/nam-and-dreams/nam1.jpg" alt="Imagen 1">
+        <section>
+            <h2 class="subtitulo">Nam and Dreams</h2>
+        </section>
+        <section class="container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide-1" src="../../img/nam-and-dreams/nam1.jpg" alt="NamImg1">
+                    <img id="slide-2" src="../../img/nam-and-dreams/nam2.jpg" alt="NamImg2">
+                    <img id="slide-3" src="../../img/nam-and-dreams/nam3.jpg" alt="NamImg3">
+                    <img id="slide-4" src="../../img/nam-and-dreams/nam4.jpg" alt="NamImg4">
+                    <img id="slide-5" src="../../img/nam-and-dreams/nam5.jpg" alt="NamImg5">
+                    <img id="slide-6" src="../../img/nam-and-dreams/nam6.jpg" alt="NamImg6">
+                    <img id="slide-7" src="../../img/nam-and-dreams/nam7.jpg" alt="NamImg7">
+                    <img id="slide-8" src="../../img/nam-and-dreams/nam8.jpg" alt="NamImg8">
+                    <img id="slide-9" src="../../img/nam-and-dreams/nam9.jpg" alt="NamImg9">
+                    <img id="slide-10" src="../../img/nam-and-dreams/nam12.jpg" alt="NamImg10">
                 </div>
-                <div class="muestra__fotos__der">
-                    <img src="../../img/nam-and-dreams/nam2.jpg" alt="Imagen 2">
-                    <img src="../../img/nam-and-dreams/nam3.jpg" alt="Imagen 3">
-                    <img src="../../img/nam-and-dreams/nam4.jpg" alt="Imagen 4">
-                    <img src="../../img/nam-and-dreams/nam5.jpg" alt="Imagen 5">
-                    <img src="../../img/nam-and-dreams/nam6.jpg" alt="Imagen 6">
-                    <img src="../../img/nam-and-dreams/nam7.jpg" alt="Imagen 7">
-                </div>
-                <div class="muestra__fotos__abajo">
-                    <img src="../../img/nam-and-dreams/nam8.jpg" alt="Imagen 8">
-                    <img src="../../img/nam-and-dreams/nam9.jpg" alt="Imagen 9">
-                    <img src="../../img/nam-and-dreams/nam12.jpg" alt="Imagen 10">
-                </div>
+            <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+                    <a href="#slide-5"></a>
+                    <a href="#slide-6"></a>
+                    <a href="#slide-7"></a>
+                    <a href="#slide-8"></a>
+                    <a href="#slide-9"></a>
+                    <a href="#slide-10"></a>
                 </div>
             </div>
         </section>
     </main>
     <footer>
         <div id="contactos" class="contactos">
-            <h2>Contactos</h2>
-                <div class="network">
-                    <a href="https://www.tiktok.com/@carliaramayo?lang=en/" target="_blank"><img src="../../img/tik-tok.png" alt="Logo Tiktok" width="50px"></a>
-                    <a href="https://www.instagram.com/carliaramayo/" target="_blank"><img src="../../img/instagram.png" alt="Logo Instagram" width="50px"></a>
-                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCHrlFSqZRQRvmKlssrVvNlxXkRWVCGRDCdjfSwxDtTBRScSlRBdZtSDDWWlBtQrdXTDqcBB"><img src="../../img/gmail.png" alt="Logo Gmail" width="55px"></a>
-                </div>
+            <h2 class="contactos__subtitulo">Contactos</h2>
+            <div class="contactos__network">
+                <a href="https://www.tiktok.com/@carliaramayo?lang=en/" target="_blank"><img src="../../img/tik-tok.png"
+                        alt="Logo Tiktok" width="50px"></a>
+                <a href="https://www.instagram.com/carliaramayo/" target="_blank"><img src="../../img/instagram.png"
+                        alt="Logo Instagram" width="50px"></a>
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCHrlFSqZRQRvmKlssrVvNlxXkRWVCGRDCdjfSwxDtTBRScSlRBdZtSDDWWlBtQrdXTDqcBB"
+                    target="_blank"><img src="../../img/gmail.png" alt="Logo Gmail" width="55px"></a>
+            </div>
         </div>
     </footer>
 </body>

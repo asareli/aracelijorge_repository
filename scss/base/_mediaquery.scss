@@ -1,9 +1,13 @@
 @media screen and (max-width: 426px){
     body .barra{
-        height: 195px;
+        height: 170px;
     }
     body .barra .barra__navegacion .barra__navegacion__lista{
         flex-direction: column;
+        width: 100px;
+    }
+    body .barra .barra__navegacion .barra__navegacion__lista .barra__navegacion__lista__elemento{
+        line-height: 30px;
     }
     body .barra .barra__navegacion .barra__navegacion__lista .barra__navegacion__lista__elemento a{
         font-size: nth($font-size, 2);
@@ -88,18 +92,59 @@
     body main .grid .cuarto__item .resenas__todas__firma{
         font-size: nth($font-size, 3);
     }
+    body main section .subtitulo{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    body main .subtitulo__proyectos{
+        flex-direction: column;
+    }
+    body main .container .slider-wrapper .slider{
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        border-radius: 2px;
+        box-shadow: 0 0 10px #0f0907;
+    }
+    body main .container .slider-nav a{
+        display: none;
+    }
 }
-@media screen and (max-width: 1024px) and (min-width: 426px) {
+@media screen and (max-width: 1024px) and (min-width: 427px) {
     body .barra{
         height: 170px;
     }
     body .barra .barra__navegacion .barra__navegacion__lista{
         flex-direction: column;
+        width:200px;
+    }
+    body .barra .barra__navegacion .barra__navegacion__lista .barra__navegacion__lista__elemento{
+        line-height: 30px;
     }
     body header .title{
         flex-direction: column;
     }
     body header .title .title__container{
-        font-size: nth($font-size, 4);
+        font-size: nth($font-size, 3);
+    }
+    body main section .subtitulo{
+        font-size: 35px;
+        margin-top: 10px;
+    }
+    body main .subtitulo__proyectos .subtitulo__proyectos__botones{
+        margin: 10px;
+        padding: 10px;
+    }
+    body main .container .slider-wrapper .slider{
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        border-radius: 2px;
+        box-shadow: 0 0 10px #0f0907;
+    }
+    body main .container .slider-nav a{
+        display: none;
     }
 }
